@@ -22,6 +22,14 @@ const Box = styled.div`
   align-items: center;
   height: 100%;
   padding: 50% 10px 0;
+  
+  @media(min-width: 768px){
+    padding: 20% 50px 0;
+  }
+
+  @media(min-width: 1024px){
+    padding: 20% 100px 0;
+  }
 `;
 
 const TextBox = styled.div`
@@ -33,6 +41,10 @@ const TextBox = styled.div`
 const Title = styled(Typography)`
   font-family: "abril-text";
   line-height: 44px;
+
+  @media(min-width: 1024px){
+    font-size: 36px;
+  }
 `;
 
 const StyledScrollchor = styled(Scrollchor)`
@@ -43,6 +55,7 @@ const StyledScrollchor = styled(Scrollchor)`
 const Arrow = styled.img`
   width: 20px;
   height: 20px;
+  cursor: pointer;
 `;
 
 const Hero = () => {

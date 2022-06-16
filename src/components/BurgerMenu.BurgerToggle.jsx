@@ -19,7 +19,7 @@ const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.1rem;
-    background: ${({ isClip }) => isClip ? '#020B20' : '#EFFFFA'};
+    background: ${({ isClip, open  }) => (isClip && !open) ? '#020B20' : '#EFFFFA'};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
